@@ -1,0 +1,24 @@
+footer {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+footer a {
+    padding: 1% 2%;
+}
+
+footer a:hover {
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+}
+
+footer p {
+    font-size: small;
+}

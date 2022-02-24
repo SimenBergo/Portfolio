@@ -1,0 +1,119 @@
+.stb__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2 rem 6 rem;
+}
+
+.stb__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.stb__navbar-links-logo {
+    margin: 2rem;
+
+}
+
+.stb__navbar-links-logo img {
+    width: 62px;
+    height: 16;
+}
+
+.stb__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stb__navbar-links_container p:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+    color: white;
+}
+
+.stb__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.stb__navbar-links_container p, 
+.stb__navbar-sign p,
+.stb__navbar-menu_container p {
+    color: black;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+}
+
+.stb__navbar-menu_container {
+    padding: 0,5 rem 1rem;
+}
+
+.stb__navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.stb__navbar-menu svg {
+    cursor: pointer;
+}
+
+.stb__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background-color: white;
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.stb__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 1050px) {
+    .stb__navbar-links_container {
+        display: none;
+    }
+
+    .stb__navbar-menu {
+        display: flex;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .stb__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .stb__navbar {
+        padding: 2rem;
+    }
+    .stb__navbar-menu_container {
+        top: 20px;
+    }
+}

@@ -1,0 +1,15 @@
+#bio {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 450px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+#bio section {
+    margin: 1%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
