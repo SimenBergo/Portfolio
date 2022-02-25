@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footer, Bio, Projects, Navbar } from './components';
+import { Footer, Bio, Projects, Navbar, Wave } from './components';
 import './App.css';
 
 const App = () => {
@@ -8,9 +8,14 @@ const App = () => {
         <div className='gradient__bg'>
           <Navbar />
         </div>
+        <div id="main">
+        <div id="content">
         <Bio />
         <Projects />
+        </div>
+        <Wave />
         <Footer />
+        </div>
     </div>
   )
 };

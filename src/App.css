@@ -23,23 +23,10 @@ a {
 }
 
 .gradient__bg {
-
-      /* ff 3.6+ */
-      background:-moz-radial-gradient(circle at 3% 67%, rgba(0, 255, 235, 1) 0%, rgba(47, 191, 255, 1) 100%);
-  
-      /* safari 5.1+,chrome 10+ */
-      background:-webkit-radial-gradient(circle at 3% 67%, rgba(0, 255, 235, 1) 0%, rgba(47, 191, 255, 1) 100%);
-  
-      /* opera 11.10+ */
-      background:-o-radial-gradient(circle at 3% 67%, rgba(0, 255, 235, 1) 0%, rgba(47, 191, 255, 1) 100%);
-  
-      /* ie 10+ */
-      background:-ms-radial-gradient(circle at 3% 67%, rgba(0, 255, 235, 1) 0%, rgba(47, 191, 255, 1) 100%);
-  
-      /* global 92%+ browsers support */
-      background:radial-gradient(circle at 3% 67%, rgba(0, 255, 235, 1) 0%, rgba(47, 191, 255, 1) 100%);
-  
+  width: 50%;
+  margin: 5px;
 }
+
 
 .gradient__text {
   background: var(--gradient_text);
@@ -113,4 +100,14 @@ a {
   .section__margin {
       margin: 4 rem 2 rem;
   } 
+}
+
+#main {
+  display: flex;
+  flex-flow: row nowrap;
+  
+}
+
+#content {
+
 }

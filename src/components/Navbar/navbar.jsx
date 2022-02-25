@@ -19,7 +19,7 @@ const Navbar = () => {
           <h1><a href="#home">Simen Bergo</a></h1>
         </div>
         <div className="stb__navbar-links_container">
-          <Menu />
+          {/*<Menu />*/}
           {/*<p><a href="#hobbies">Hobbies</a></p>*/}
         </div>
       </div>
