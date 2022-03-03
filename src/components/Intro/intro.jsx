@@ -10,7 +10,7 @@ function Intro() {
 
   return (
     <div id="intro" data-aos="fade-right">
-        <img src={me} alt='picture of Simen Bergo' />
+        <img src={me} alt='Simen Bergo' />
         <h2>Hi, im Simen Bergo</h2>
         <p>A full-stack web developer from Norway</p>
         <p>Currently writing my bachelors thesis at NTNU Gjøvik</p>
