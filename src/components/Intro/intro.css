@@ -2,7 +2,6 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    
     align-items: center;
     font-family: 'Roboto Slab', serif;
     height: 750px;
@@ -55,4 +54,11 @@
     }
   }
 
+#intro img {
+    max-width: 160px;
+    max-height: 160px;
+    border: 4px solid lightgrey;
+    object-fit: fill;
+    border-radius: 100%;
+}
 
