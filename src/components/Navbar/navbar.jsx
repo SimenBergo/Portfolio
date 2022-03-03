@@ -29,7 +29,7 @@ const Navbar = () => {
           : <RiMenuLine color="000000" size={27} onClick={() => setToggleMenu(true)} />}
           {toggleMenu && (
             <div className='stb__navbar-menu_container scale-up-center'>
-              <div className="gpt3__navbar-menu_container-links">
+              <div className="stb__navbar-menu_container-links">
                 <Menu />
             </div>
           </div>

@@ -27,6 +27,7 @@ a {
 
 .gradient__bg {
   width: 75%;
+  height: 40px;
   z-index: 1;
   margin: 5px;
   display: flex;

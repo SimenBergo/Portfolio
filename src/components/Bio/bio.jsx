@@ -9,8 +9,8 @@ const Bio = () => {
 
   return (
     <div id="bio" data-aos="fade-right">
-      <h2>Bio</h2>
       <section>
+      <h2>Bio</h2>
         <p><b>1997</b> Born</p>
         <p><b>2016 - 2019</b> Graduated high school and joined the Norwegian Army as 
         conscript soldier, and worked various part-time jobs

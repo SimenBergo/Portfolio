@@ -73,8 +73,8 @@ h1 {
 
 .stb__navbar-menu_container {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     text-align: end;
     background-color: white;
@@ -93,6 +93,9 @@ h1 {
     margin: 1rem 0;
 }
 
+.stb__navbar-menu_container-links {
+    text-align: left;
+}
 @media screen and (max-width: 700px) {
     .stb__navbar-links_container {
         display: none;

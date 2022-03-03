@@ -4,32 +4,15 @@
     justify-content: center;
     align-items: center;
     font-family: 'Roboto Slab', serif;
-    height: 750px;
-    
+    height: 800px;
 }
 
 #intro h2 {
     font-weight: normal;
 }
 
-@media screen and (max-width: 830px) {
-    #intro {
-        height: 700px;
-    }
-
-}
-
-@media screen and (max-width: 550px) {
-    #intro {
-        height: 800px;
-        margin: 0 15%;
-    }
-
-}
-
 #scroll-indicator {
     height: 5px;
-    position: relative;
     width: 100%;
   }
   
@@ -57,10 +40,31 @@
   }
 
 #intro img {
-    max-width: 160px;
-    max-height: 160px;
+    max-width: 250px;
+    max-height: 250px;
     border: 4px solid lightgrey;
     object-fit: fill;
     border-radius: 100%;
+    margin: 2% 0;
+}
+
+@media screen and (max-width: 830px) {
+    #intro {
+        height: 700px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    #intro {
+        height: 800px;
+        margin: 0 10%;
+        text-align: center;
+    }
+
+    #scroll-indicator::before {
+        bottom: 1rem;
+    }
+
 }
 

@@ -9,17 +9,22 @@ footer {
     width: 100%;
 }
 
-footer a {
-    padding: 1% 2%;
+#links a {
+    padding: 1% 4%;
 }
 
-footer a:hover {
+#links {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#links a:hover {
     transform: scale(1.05);
     transition-duration: 0.4s;
 }
 
 footer p {
-    font-size: small;
+    margin: 1% 4%;
 }
 
 @media screen and (max-width: 550px) {
@@ -29,10 +34,11 @@ footer p {
         align-items: flex-start;
         height: 600px;
         margin-left: 5%;
+        padding: 1%;
     }
 
-    footer a {
-        padding: 2%;
+    #links a {
+        padding: 4%;
     }
 
 }

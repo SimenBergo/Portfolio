@@ -22,6 +22,8 @@ section {
     align-items: center;
     justify-content: center;
     width: 250px;
+    text-align: center;
+    line-height: 1.5;
 }
 
 section a {

@@ -6,11 +6,15 @@
     align-items: center;
     font-family: 'Roboto Slab', serif;
     height: 600px;
+    text-align: left;
+    margin: 5%;
 }
 
 #bio section {
     margin: 1%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
 }
+
