@@ -5,6 +5,7 @@
     align-items: center;
     font-family: 'Roboto Slab', serif;
     height: 750px;
+    
 }
 
 #intro h2 {
@@ -21,6 +22,7 @@
 @media screen and (max-width: 550px) {
     #intro {
         height: 800px;
+        margin: 0 15%;
     }
 
 }
