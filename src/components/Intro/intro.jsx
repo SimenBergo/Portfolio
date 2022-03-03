@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 function Intro() {
 
-    AOS.init({ duration: 3000});
+    AOS.init({ duration: 3000, delay: 20 });
 
   return (
     <div id="intro" data-aos="fade-right">

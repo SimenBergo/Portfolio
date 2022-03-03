@@ -26,8 +26,16 @@ a {
 }
 
 .gradient__bg {
-  width: 50%;
+  width: 75%;
+  z-index: 1;
   margin: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  scroll-behavior: smooth;
 }
 
 

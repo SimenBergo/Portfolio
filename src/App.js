@@ -11,6 +11,7 @@ const App = () => {
           <Navbar />
         </div>
         <Intro />
+        <div id="scroll-indicator"></div>
         <Bio />
         <Projects />
         <Footer />

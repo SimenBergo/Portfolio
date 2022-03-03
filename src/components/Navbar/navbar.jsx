@@ -1,12 +1,13 @@
 
 import React, { useState } from 'react';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import './navbar.css';
 
 const Menu = () => (
   <>
+    <p><a href="#bio">Bio</a></p>
     <p><a href="#projects">Projects</a></p>
-    <p><a href="#stb">Bio</a></p>
+    <p><a href="https://drive.google.com/file/d/1nn_N17sIzqVyg6mABYbUhA4nYML7dHl1/view?usp=sharing" target="_blank">Resume</a></p>
   </>
 )
 
@@ -19,14 +20,13 @@ const Navbar = () => {
           <h1><a href="#home">Simen Bergo</a></h1>
         </div>
         <div className="stb__navbar-links_container">
-          {/*<Menu />*/}
-          {/*<p><a href="#hobbies">Hobbies</a></p>*/}
+          <Menu />
         </div>
       </div>
       <div className='stb__navbar-menu'>
         {toggleMenu 
-          ? <RiCloseLine color="fff" size={27} onClick={() => setToggleMenu(false)} />
-          : <RiMenu3Line color="fff" size={27} onClick={() => setToggleMenu(true)} />}
+          ? <RiCloseLine color="000000" size={27} onClick={() => setToggleMenu(false)} />
+          : <RiMenuLine color="000000" size={27} onClick={() => setToggleMenu(true)} />}
           {toggleMenu && (
             <div className='stb__navbar-menu_container scale-up-center'>
               <div className="gpt3__navbar-menu_container-links">

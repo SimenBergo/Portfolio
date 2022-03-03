@@ -2,19 +2,57 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    
     align-items: center;
     font-family: 'Roboto Slab', serif;
-    height: 1000px;
+    height: 750px;
 }
 
 #intro h2 {
     font-weight: normal;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 830px) {
     #intro {
-        height: 600px;
+        height: 700px;
     }
 
 }
+
+@media screen and (max-width: 550px) {
+    #intro {
+        height: 800px;
+    }
+
+}
+
+#scroll-indicator {
+    height: 5px;
+    position: relative;
+    width: 100%;
+  }
+  
+#scroll-indicator::before {
+    animation: bounce 1s ease infinite;
+    bottom: 2rem;
+    color: #333;
+    content: '╲╱';
+    font-size: 2rem;
+    height: 4rem;
+    left: 50%;
+    letter-spacing: -1px;
+    line-height: 4rem;
+    margin-left: -3rem;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    width: 6rem;
+  }
+  
+  @keyframes bounce {
+    50% {
+      transform: translateY(-7%);
+    }
+  }
+
 

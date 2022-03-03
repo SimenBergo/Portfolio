@@ -31,7 +31,7 @@
 .stb__navbar-links_container p:hover {
     transform: scale(1.1);
     transition-duration: 0.2s;
-    color: white;
+    color: #BA3434;
 }
 
 .stb__navbar-sign {
@@ -77,7 +77,7 @@ h1 {
     align-items: flex-end;
     flex-direction: column;
     text-align: end;
-    background-color: white;
+    background-color: lightgrey;
     padding: 2rem;
     position: absolute;
     top: 40px;
@@ -92,26 +92,26 @@ h1 {
     margin: 1rem 0;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 700px) {
     .stb__navbar-links_container {
         display: none;
     }
 
     .stb__navbar-menu {
         display: flex;
-        color: white;
+        color: black;
     }
-}
 
-@media screen and (max-width: 700px) {
     .stb__navbar {
         padding: 2rem 4rem;
     }
+
+    
 }
 
 @media screen and (max-width: 550px) {
     .stb__navbar {
-        padding: 2rem;
+        padding: 1rem;
     }
     .stb__navbar-menu_container {
         top: 20px;
