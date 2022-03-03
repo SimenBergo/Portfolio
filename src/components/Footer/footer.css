@@ -1,13 +1,12 @@
 footer {
-    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
     font-family: var(--font-family);
     font-weight: bold;
     font-size: 18px;
+    width: 100%;
 }
 
 footer a {
@@ -21,4 +20,19 @@ footer a:hover {
 
 footer p {
     font-size: small;
+}
+
+@media screen and (max-width: 550px) {
+    footer {
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        height: 600px;
+        margin-left: 5%;
+    }
+
+    footer a {
+        padding: 2%;
+    }
+
 }

@@ -1,20 +1,21 @@
 import React from 'react';
-import { Footer, Bio, Projects, Navbar, Wave } from './components';
+import { Footer, Bio, Projects, Navbar, Wave, Intro } from './components';
 import './App.css';
 
 const App = () => {
   return (
     <div className='App'>
+        <div id="main">
+        <div id="content">
         <div className='gradient__bg'>
           <Navbar />
         </div>
-        <div id="main">
-        <div id="content">
+        <Intro />
         <Bio />
         <Projects />
-        </div>
-        <Wave />
         <Footer />
+        </div>
+        
         </div>
     </div>
   )

@@ -3,8 +3,8 @@ import LayeredWave from '../../assets/layered-waves-haikei.svg';
 
 const Wave = () => {
     return (
-        <div>
-            <img src={LayeredWave}></img>
+        <div id="wave">
+            <img src={LayeredWave} alt="blue wave"></img>
         </div>
     )
 }

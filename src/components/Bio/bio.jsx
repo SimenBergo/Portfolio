@@ -1,9 +1,14 @@
 import React from 'react';
 import './bio.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Bio = () => {
+
+  AOS.init({ duration: 2000});
+
   return (
-    <div id="bio">
+    <div id="bio" data-aos="fade-right">
       <h2>Bio</h2>
       <section>
         <p><b>1997</b> Born</p>

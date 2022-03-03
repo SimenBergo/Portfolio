@@ -24,17 +24,27 @@ section {
     width: 250px;
 }
 
-h2, h3 {
-    color: white;
+section a {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
 }
 
 #boxes section a img {
     max-width: 200px;
-    border: 4px solid white;
-    border-radius: 5px;
+    border: 2px solid black;
+    border-radius: 3px;
 }
 
-section a:hover {
+#boxes section:hover {
     transform: scale(1.1);
     transition-duration: 0.4s;
+}
+
+@media screen and (max-width: 550px ) {
+    #boxes {
+        flex-flow: column nowrap;
+    }
 }

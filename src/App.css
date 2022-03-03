@@ -6,11 +6,14 @@
 }
 
 body {
-  background: var(--color-bg);
+  background-image: url(./assets/layered-waves-haikei.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 body p {
   color: black;
+  font-weight: lighter;
 }
 
 h1, h2, h3 {
@@ -90,6 +93,10 @@ a {
   .section__margin {
       margin: 4 rem;
   } 
+
+  #wave {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -100,14 +107,24 @@ a {
   .section__margin {
       margin: 4 rem 2 rem;
   } 
+
+  #wave {
+    display: none;
+  }
 }
 
 #main {
   display: flex;
   flex-flow: row nowrap;
-  
+}
+
+#wave {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #content {
-
+  width: 100%;
 }
+
