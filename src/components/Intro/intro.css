@@ -4,40 +4,11 @@
     justify-content: center;
     align-items: center;
     font-family: 'Roboto Slab', serif;
-    height: 800px;
 }
 
 #intro h2 {
     font-weight: normal;
 }
-
-#scroll-indicator {
-    height: 5px;
-    width: 100%;
-  }
-  
-#scroll-indicator::before {
-    animation: bounce 1s ease infinite;
-    bottom: 2rem;
-    color: #333;
-    content: '╲╱';
-    font-size: 2rem;
-    height: 4rem;
-    left: 50%;
-    letter-spacing: -1px;
-    line-height: 4rem;
-    margin-left: -3rem;
-    opacity: 0.8;
-    position: absolute;
-    text-align: center;
-    width: 6rem;
-  }
-  
-  @keyframes bounce {
-    50% {
-      transform: translateY(-7%);
-    }
-  }
 
 #intro img {
     max-width: 250px;
@@ -57,13 +28,19 @@
 
 @media screen and (max-width: 550px) {
     #intro {
-        height: 800px;
+        height: 600px;
         margin: 0 10%;
         text-align: center;
+        justify-content: flex-end;
+        padding: 5% 0;
     }
 
     #scroll-indicator::before {
-        bottom: 1rem;
+        bottom: 0;
+    }
+
+    #intro img {
+        max-height: 200px;
     }
 
 }

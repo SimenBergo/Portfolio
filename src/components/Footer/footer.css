@@ -6,7 +6,6 @@ footer {
     font-family: var(--font-family);
     font-weight: bold;
     font-size: 18px;
-    width: 100%;
 }
 
 #links a {
@@ -23,22 +22,27 @@ footer {
     transition-duration: 0.4s;
 }
 
-footer p {
-    margin: 1% 4%;
-}
+
 
 @media screen and (max-width: 550px) {
     footer {
         flex-flow: column;
         justify-content: flex-end;
-        align-items: flex-start;
-        height: 600px;
-        margin-left: 5%;
+        align-items: center;
+        min-height: 200px;
         padding: 1%;
+    }
+
+    #links {
+        justify-content: center;
     }
 
     #links a {
         padding: 4%;
+    }
+
+    footer p {
+        margin: 1% 4%;
     }
 
 }

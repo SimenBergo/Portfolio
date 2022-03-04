@@ -6,7 +6,7 @@ import me from '../../assets/me.jpg'
 
 function Intro() {
 
-    AOS.init({ duration: 3000, delay: 20 });
+    AOS.init({ duration: 3000, delay: 400 });
 
   return (
     <div id="intro" data-aos="fade-right">

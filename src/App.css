@@ -26,13 +26,13 @@ a {
 }
 
 .gradient__bg {
-  width: 75%;
   height: 40px;
   z-index: 1;
   margin: 5px;
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
+  align-items: flex-start;
+  width: 100%;
 }
 
 
@@ -89,6 +89,27 @@ a {
   }
 }
 
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#wave {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  height: 850px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 @media screen and (max-width: 700px) {
   .section__padding {
@@ -98,10 +119,6 @@ a {
   .section__margin {
       margin: 4 rem;
   } 
-
-  #wave {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 550px) {
@@ -113,23 +130,23 @@ a {
       margin: 4 rem 2 rem;
   } 
 
-  #wave {
-    display: none;
+  #content {
+    height: 600px;
+  }
+
+  section {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    opacity: 90%;
+    padding: 1%;
   }
 }
 
-#main {
-  display: flex;
-  flex-flow: row nowrap;
+#copyright {
+  font-family: var(--font-family);
+  font-weight: normal;
 }
 
-#wave {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
-#content {
-  width: 100%;
-}
 

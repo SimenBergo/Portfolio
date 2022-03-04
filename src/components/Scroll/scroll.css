@@ -1,0 +1,12 @@
+#scroll {
+    animation: bounce 2s ease infinite;
+    opacity: 60%;
+    scroll-behavior: smooth;
+    margin: 5px 0;
+}
+  
+@keyframes bounce {
+    50% {
+      transform: translateY(-10%);
+    }
+}
