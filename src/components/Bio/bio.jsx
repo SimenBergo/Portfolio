@@ -2,6 +2,7 @@ import React from 'react';
 import './bio.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import  Scroll2  from '../Scroll/scroll2.jsx';
 
 const Bio = () => {
 
@@ -21,6 +22,7 @@ const Bio = () => {
         <h2>Things i like</h2>
         <p>Music, Movies, Traveling, Sports, Music production, DJ'ing, Videogames</p>
       </section>
+      <Scroll2 />
     </div>
   )
 };

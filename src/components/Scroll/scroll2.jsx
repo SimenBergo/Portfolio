@@ -5,7 +5,7 @@ import { RiArrowDownLine } from 'react-icons/ri';
 function Scroll2() {
   return (
     <div id="scroll">
-        <a href="#projects"><RiArrowDownLine color="000000" size={45}/></a>
+        <a href="#projects"><RiArrowDownLine color="000000" size={55}/></a>
     </div>
   )
 }

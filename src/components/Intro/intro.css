@@ -28,11 +28,11 @@
 
 @media screen and (max-width: 550px) {
     #intro {
-        height: 600px;
         margin: 0 10%;
         text-align: center;
         justify-content: flex-end;
         padding: 5% 0;
+        height: 500px;
     }
 
     #scroll-indicator::before {

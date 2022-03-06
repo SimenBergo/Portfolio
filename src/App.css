@@ -103,7 +103,7 @@ a {
 }
 
 #content {
-  height: 850px;
+  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -131,7 +131,7 @@ a {
   } 
 
   #content {
-    height: 600px;
+    height: 550px;
   }
 
   section {
