@@ -103,7 +103,7 @@ a {
 }
 
 #content {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -146,6 +146,32 @@ a {
 #copyright {
   font-family: var(--font-family);
   font-weight: normal;
+}
+
+@media screen and (min-width: 3000px) {
+    .stb__navbar, .stb__navbar-links_container p, #intro, p, h1, h2 {
+      font-size: xx-large;
+    }
+
+    h1 a {
+      font-size: 60px;
+    }
+
+    section {
+      width: 600px;
+    }
+
+    h3 {
+      font-size: 40px;
+    }
+
+    #projects h2 {
+      font-size: 50px;
+    }
+
+    #boxes section a img {
+      max-width: 500px;
+    }
 }
 
 
