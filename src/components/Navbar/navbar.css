@@ -31,7 +31,11 @@
 .stb__navbar-links_container p:hover {
     transform: scale(1.1);
     transition-duration: 0.2s;
+}
+
+.stb__navbar-links_container p a:hover {
     color: #BA3434;
+    transition-duration: 0.2s;
 }
 
 .stb__navbar-sign {

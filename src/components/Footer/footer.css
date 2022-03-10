@@ -15,6 +15,8 @@ footer {
 #links {
     display: flex;
     flex-flow: row nowrap;
+    gap: 1rem;
+    margin: 2px;
 }
 
 #links a:hover {
