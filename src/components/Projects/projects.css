@@ -46,6 +46,12 @@ section a {
     transition-duration: 0.4s;
 }
 
+@media screen and (max-width: 850px) {
+    #boxes {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 550px ) {
     #boxes {
         flex-flow: column nowrap;
