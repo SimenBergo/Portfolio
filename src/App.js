@@ -9,18 +9,18 @@ const App = () => {
 
   console.log('Hello there');
 
-  /* const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
   const Toggle = () => (
     <div className="theme-switch-wrapper">
         <label className="theme-switch" htmlFor="checkbox">
-            <input type="checkbox" id="checkbox" onClick={switchTheme}/>
-            <div className="slider round">
-            {theme === 'light' ? 
+            <input type="button" id="checkbox" onClick={switchTheme}/>
+            
+            {theme === 'dark' ? 
             (<RiSunLine id="sun" size={40} />) : 
             (<RiMoonLine id="moon" size={40}/>)}
-          </div>
+          
         </label>
     </div>
   )
@@ -28,15 +28,15 @@ const App = () => {
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
-} */
+} 
 
   return (
-    <div className='App' /* data-theme={theme} */>
+    <div className='App'  data-theme={theme} >
       <Div100vh>
         <div id="content">
         <div className='gradient__bg'>
           <Navbar />
-          {/* <Toggle /> */}
+          <Toggle />
         </div>
         <Intro />
         <Scroll />

@@ -14,6 +14,6 @@
 }
 
 [data-theme='dark'] {
-  --background: black;
+  --background: #545454;
   --text-primary: white;
 }
