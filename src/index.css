@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 :root {
-  --font-family: 'Manrope', sans-serif;
-
+  --font-family: 'Roboto', sans-serif;
   --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
   --color-bg: white;
   --color-footer : #031B34;
@@ -11,9 +10,14 @@
   --color-subtext: #FF8A71;
   --background: white;
   --text-primary: black;
+  --switch-color: black;
 }
 
 [data-theme='dark'] {
-  --background: #545454;
-  --text-primary: white;
+  --background: #212121;
+  --text-primary: #BB3434;
+  filter: brightness(90%);
 }
+
+
+/*#D1EB0E */

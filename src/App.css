@@ -3,6 +3,11 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: var(--font-family);
+}
+
+body {
+  
 }
 
 .App {
@@ -12,7 +17,6 @@
   background-position: right;
   color: var(--text-primary);
 }
-
 
 
 a {
@@ -26,7 +30,8 @@ a {
   margin: 5px;
   display: flex;
   flex-flow: row nowrap;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -136,6 +141,10 @@ a {
     opacity: 90%;
     padding: 1%;
   }
+
+  .theme-switch {
+    color: white;
+  }
 }
 
 #copyright {
@@ -175,16 +184,18 @@ a {
   display: flex;
   align-items: center;
 }
-.theme-switch {
-  display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px;
-}
 
 .theme-switch input {
-  display:none;
+  display: none;
+}
+
+.theme-switch {
   cursor: pointer;
+}
+
+.theme-switch:hover {
+  transform: scale(1.1);
+  transition-duration: 0.4s;
 }
 
 

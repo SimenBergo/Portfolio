@@ -14,12 +14,12 @@ const App = () => {
 
   const Toggle = () => (
     <div className="theme-switch-wrapper">
-        <label className="theme-switch" htmlFor="checkbox">
-            <input type="button" id="checkbox" onClick={switchTheme}/>
+        <label className="theme-switch" htmlFor="button">
+            <input type="button" id="button" onClick={switchTheme}/>
             
             {theme === 'dark' ? 
-            (<RiSunLine id="sun" size={40} />) : 
-            (<RiMoonLine id="moon" size={40}/>)}
+            (<RiSunLine id="sun" size={35} />) : 
+            (<RiMoonLine id="moon" size={35}/>)}
           
         </label>
     </div>
