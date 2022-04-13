@@ -6,10 +6,6 @@
   font-family: var(--font-family);
 }
 
-body {
-  
-}
-
 .App {
   background-color: var(--background);
   background-image: url(./assets/layered-waves-haikei.svg);

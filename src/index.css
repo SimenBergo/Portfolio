@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
 :root {
-  --font-family: 'Roboto', sans-serif;
+  --font-family: 'Roboto Slab', sans-serif;
   --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
   --color-bg: white;
   --color-footer : #031B34;

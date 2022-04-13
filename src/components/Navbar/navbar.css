@@ -127,4 +127,8 @@ h1 {
         top: 30px;
         z-index: 1;
     }
+
+    .stb__navbar-menu {
+        margin-left: 4rem;
+    }
 }

@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className='stb__navbar'>
       <div className='stb__navbar-links'>
         <div className='stb__navbar-links_logo'>
-          <h1><a href="/">Simen Bergo</a></h1>
+          <h1>Simen Bergo</h1>
         </div>
         <div className="stb__navbar-links_container">
           <Menu />
