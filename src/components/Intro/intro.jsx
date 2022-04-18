@@ -2,7 +2,7 @@ import React from 'react'
 import './intro.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import me from '../../assets/me.jpg'
+import me from '../../assets/stb.png'
 
 function Intro() {
 
