@@ -13,7 +13,7 @@ function Intro() {
         <img src={me} alt='Simen Bergo' />
         <h2>Hi, im Simen Bergo</h2>
         <p>A full-stack web developer from Norway</p>
-        <p>Currently writing my bachelors thesis at NTNU Gjøvik</p>
+        <p>Currently finishing my bachelors degree at NTNU Gjøvik</p>
     </div>
   )
 }

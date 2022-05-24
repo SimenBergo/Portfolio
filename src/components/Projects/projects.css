@@ -5,14 +5,15 @@
     align-items: center;
     font-family: 'Roboto Slab', serif;
     margin: 4% 0;
+    width: 90%;
 }
 
 #boxes {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 100%;
     gap: 50px;
 }
 
@@ -22,27 +23,29 @@ section {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    width: 250px;
+    width: 90%;
     text-align: center;
     line-height: 1.5;
+    background-color: var(--card-bg);
+    border-radius: 3px;
 }
 
 section a {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    padding: 2px;
+    padding: 20px;
 }
 
-#boxes section a img {
+#boxes section a img, #boxes section img {
     max-width: 200px;
     border: 2px solid black;
     border-radius: 3px;
 }
 
 #boxes section:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     transition-duration: 0.4s;
 }
 

@@ -42,8 +42,8 @@ const App = () => {
         <Scroll />
         </div>
         </Div100vh>
-        <Bio />
         <Projects />
+        <Bio />
         <Footer />
         <p id="copyright">© 2022 Built by Simen Tokerød Bergo</p>
     </div>

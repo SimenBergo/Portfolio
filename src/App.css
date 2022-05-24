@@ -14,6 +14,12 @@
   color: var(--text-primary);
 }
 
+@media (prefers-color-scheme: dark) {
+  .App {
+    filter: hue-rotate(90deg);
+  }
+}
+
 a {
   color: var(--text-primary);;
   text-decoration: none;
