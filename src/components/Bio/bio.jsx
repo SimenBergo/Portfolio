@@ -23,14 +23,14 @@ const Bio = () => {
         <h2>Hobbies</h2>
         <p>Music, Movies, Traveling, Sports, Music production, DJ'ing, Videogames.</p>
         <p>
-          One of my biggest passions is alpine skiing, and i trained and raced over a period of almost 15 years
+          One of my biggest passions is alpine skiing, and i trained and raced over a period of almost 15 years.
           In the video below i am on vacation in the Italian alps, and while going straight down is not how we train, it is still fun.
         </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lPAi4UHUsB8?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen ></iframe>
+        <iframe src="https://www.youtube.com/embed/lPAi4UHUsB8?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen ></iframe>
         <p>Even though i enjoy it very much, some times accidents happen, as can be seen i the video below, where 
           myself and my club was supposed to parade with flags before a ski jumping contest in Holmenkollen, Oslo.
         </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FdLr326npNk?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen ></iframe>
+        <iframe src="https://www.youtube.com/embed/FdLr326npNk?controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen ></iframe>
       </section>
     </div>
   )

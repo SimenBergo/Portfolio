@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './projects.css'
 import planteskolen from '../../assets/planteskolen.JPG';
 import cloudbank from '../../assets/cloud-bank.JPG'
@@ -13,6 +13,12 @@ const Projects = () => {
 
   AOS.init({ duration: 2000});
 
+  const [details, setDetails ] = useState(false);
+
+  function moreInfo() {
+    details ? setDetails(true) : setDetails(false);
+  }
+
   return (
     <div id="projects" data-aos="fade-right">
         <h2>Projects</h2>
@@ -20,6 +26,7 @@ const Projects = () => {
 
         <section>
         <h3>PreViS Samhandlingssystem (Bachelor project)</h3>
+        <div id='previs'>
             <img src={previs} alt="PreViS interface in ambulance" />
           <div id="purpose">
           <h4>Purpose:</h4>
@@ -42,6 +49,7 @@ const Projects = () => {
             Automate share screen functionality, improve video quality, better latency,
             zoom in fullscreen mode, more testing.
           </p>
+          </div>
           </div>
         </section>  
 

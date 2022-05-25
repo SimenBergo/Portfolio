@@ -36,6 +36,11 @@ a {
   width: 100%;
 }
 
+iframe {
+  width: 50%;
+  aspect-ratio: 16/9;
+  margin: 4%;
+}
 
 .gradient__text {
   background: var(--gradient_text);
@@ -136,15 +141,15 @@ a {
   }
 
   section {
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: white;
-    opacity: 90%;
     padding: 1%;
   }
 
   .theme-switch {
     color: white;
+  }
+
+  iframe {
+    width: 80%;
   }
 }
 
