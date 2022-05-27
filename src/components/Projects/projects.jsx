@@ -8,16 +8,43 @@ import previs from '../../assets/PreViS.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import  Scroll2  from '../Scroll/scroll2.jsx';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Modal from '@mui/material/Modal';
 
 const Projects = () => {
 
   AOS.init({ duration: 2000});
 
-  const [details, setDetails ] = useState(false);
+  const [open, setOpen] = React.useState(false);
+  const [open2, setOpen2] = React.useState(false);
+  const [open3, setOpen3] = React.useState(false);
+  const [open4, setOpen4] = React.useState(false);
+  const [open5, setOpen5] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+  const handleOpen2 = () => setOpen2(true);
+  const handleClose2 = () => setOpen2(false);
+  const handleOpen3 = () => setOpen3(true);
+  const handleClose3 = () => setOpen3(false);
+  const handleOpen4 = () => setOpen4(true);
+  const handleClose4 = () => setOpen4(false);
+  const handleOpen5 = () => setOpen5(true);
+  const handleClose5 = () => setOpen5(false);
 
-  function moreInfo() {
-    details ? setDetails(true) : setDetails(false);
-  }
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    maxWidth: '90%',
+    maxHeight: '80%',
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    borderRadius: '5px',
+    boxShadow: 24,
+    p: 4,
+  };
 
   return (
     <div id="projects" data-aos="fade-right">
@@ -25,9 +52,12 @@ const Projects = () => {
         <div id="boxes">
 
         <section>
-        <h3>PreViS Samhandlingssystem (Bachelor project)</h3>
-        <div id='previs'>
-            <img src={previs} alt="PreViS interface in ambulance" />
+        <Button onClick={handleOpen}>
+          <h3>PreViS Samhandlingssystem (Bachelor project)</h3>
+          <img src={previs} alt="PreViS interface in ambulance" />
+          </Button>
+        <Modal open={open} onClose={handleClose}>
+        <Box sx={style}>
           <div id="purpose">
           <h4>Purpose:</h4>
           <p>
@@ -49,14 +79,19 @@ const Projects = () => {
             Automate share screen functionality, improve video quality, better latency,
             zoom in fullscreen mode, more testing.
           </p>
+          
           </div>
-          </div>
-        </section>  
+        </Box>
+      </Modal>
+      </section>  
 
         <section>
-        <h3>Planteskolen</h3>
-          <a href="http://planteskolen.herokuapp.com/" target="_blank" rel="noreferrer">
-            <img src={planteskolen} alt="Planteskolen landing page" />
+        <Button onClick={handleOpen2}>
+          <h3>Planteskolen</h3>
+          <img src={planteskolen} alt="Planteskolen landing page" />
+        </Button>
+        <Modal open={open2} onClose={handleClose2}>
+        <Box sx={style}>
             <div id="purpose">
           <h4>Purpose:</h4>
           <p>
@@ -81,14 +116,19 @@ const Projects = () => {
           is a lot of code that could be rewritten and optimized, by for instance using functional
           components and hooks, instead of class components.
           </p>
+          <a href="https://planteskolen.herokuapp.com/" target="_blank" rel="noreferrer">Link to project</a>
           </div>
-          </a>
+        </Box>
+        </Modal>
         </section>
 
         <section>
+        <Button onClick={handleOpen3}>
           <h3>ABC Bank system</h3>
-          <a href="https://cloud-nine-with-a-big-bank.herokuapp.com/" target="_blank" rel="noreferrer">
             <img src={cloudbank} alt="Cloud bank page" />
+            </Button>
+        <Modal open={open3} onClose={handleClose3}>
+        <Box sx={style}>
             <div id="purpose">
           <h4>Purpose:</h4>
           <p>
@@ -112,13 +152,18 @@ const Projects = () => {
           technologies could also make the development less time-consuming.
           </p>
           </div>
-          </a>
+          <a href="https://cloud-nine-with-a-big-bank.herokuapp.com/" target="_blank" rel="noreferrer">Link to project</a>
+          </Box>
+        </Modal>
         </section>
 
         <section>
         <h3>7 min workout</h3>
-          <a href="https://folk.ntnu.no/simentb/2nd-Year/Tilgjengelighet/Exam-test/" target="_blank" rel="noreferrer">
+        <Button onClick={handleOpen4}>
             <img src={tilgjengelighet} alt="7 Min Workout page" />
+            </Button>
+        <Modal open={open4} onClose={handleClose4}>
+        <Box sx={style}>
             <div id="purpose">
           <h4>Purpose:</h4>
           <p>
@@ -141,13 +186,18 @@ const Projects = () => {
           could have easily been simplified and optimized, to improve the performance of the page.
           </p>
           </div>
-          </a>
+          <a href="https://folk.ntnu.no/simentb/2nd-Year/Tilgjengelighet/Exam-test/" target="_blank" rel="noreferrer">Link to project</a>
+          </Box>
+        </Modal>
         </section>
 
         <section>
         <h3>Swan Vacation App</h3>
-          <a href="https://www.figma.com/proto/NnKV6ECsVNtr6pcPKxBwvu/swan.-vacation-app?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=12%3A140" target="_blank" rel="noreferrer">
+        <Button onClick={handleOpen5}>
             <img src={swan} alt="Swan landing page" />
+            </Button>
+        <Modal open={open5} onClose={handleClose5}>
+        <Box sx={style}>
           <div id="purpose">
           <h4>Purpose:</h4>
           <p>
@@ -169,7 +219,9 @@ const Projects = () => {
           problems that need fixing.
           </p>
           </div>
-          </a>
+          <a href="https://www.figma.com/proto/NnKV6ECsVNtr6pcPKxBwvu/swan.-vacation-app?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=12%3A140" target="_blank" rel="noreferrer">Link to project</a>
+          </Box>
+        </Modal>
         </section>
 
         </div>
