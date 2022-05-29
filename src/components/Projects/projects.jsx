@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './projects.css'
-import planteskolen from '../../assets/planteskolen.JPG';
-import cloudbank from '../../assets/cloud-bank.JPG'
-import tilgjengelighet from '../../assets/tilgjengelighet.JPG'
-import swan from '../../assets/swan.JPG'
+import planteskolen from '../../assets/planteskolen.png';
+import cloudbank from '../../assets/cloudnine.png'
+import tilgjengelighet from '../../assets/tilgjengelighet.png'
+import swan from '../../assets/swan.png'
 import previs from '../../assets/PreViS.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -39,7 +39,7 @@ const Projects = () => {
     transform: 'translate(-50%, -50%)',
     maxWidth: '90%',
     maxHeight: '80%',
-    bgcolor: 'background.paper',
+    bgcolor: 'var(--background)',
     border: '2px solid #000',
     borderRadius: '5px',
     boxShadow: 24,
@@ -151,8 +151,8 @@ const Projects = () => {
           improvements that could be made to reduce cluttered, complicated code. Using other
           technologies could also make the development less time-consuming.
           </p>
-          </div>
           <a href="https://cloud-nine-with-a-big-bank.herokuapp.com/" target="_blank" rel="noreferrer">Link to project</a>
+          </div>
           </Box>
         </Modal>
         </section>
@@ -185,8 +185,8 @@ const Projects = () => {
           necessary javascript features. This meant it became a mess of over-complicated code, and it
           could have easily been simplified and optimized, to improve the performance of the page.
           </p>
-          </div>
           <a href="https://folk.ntnu.no/simentb/2nd-Year/Tilgjengelighet/Exam-test/" target="_blank" rel="noreferrer">Link to project</a>
+          </div>
           </Box>
         </Modal>
         </section>
@@ -218,8 +218,8 @@ const Projects = () => {
           whether or not it is usable and accessible. Testing this with 4-5 test subjects could reveal
           problems that need fixing.
           </p>
-          </div>
           <a href="https://www.figma.com/proto/NnKV6ECsVNtr6pcPKxBwvu/swan.-vacation-app?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=12%3A140" target="_blank" rel="noreferrer">Link to project</a>
+          </div>
           </Box>
         </Modal>
         </section>
