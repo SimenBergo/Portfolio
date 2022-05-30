@@ -25,13 +25,22 @@
     text-decoration: underline;
 }
 
-.css-5f9ucg {
+#modal {
     background-color: var(--background);
     color: var(--text-primary);
+    height: calc(100vh - 500px);
+    overflow-y: auto;
+}
+
+#modal h4 {
+    margin-top: 4%;
+}
+
+#modal h5 {
+    margin-top: 2%;
 }
 
 section {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +83,7 @@ button p, button h3, button h4 {
 #boxes section:hover {
     transform: scale(1.02);
     transition-duration: 0.4s;
-    background-color: white;
+    
 }
 
 @media screen and (max-width: 850px) {
@@ -86,6 +95,14 @@ button p, button h3, button h4 {
 
     section {
         width: 80%;
+    }
+
+    #modal {
+        height: calc(100vh - 50px);
+    }
+
+    #modal-img img {
+        width: 100%;
     }
 }
 
@@ -100,4 +117,8 @@ button p, button h3, button h4 {
     #boxes section a img, #boxes section img {
         max-width: 50%;
     }
+}
+
+#modal-img img {
+    max-width: 300px;
 }
