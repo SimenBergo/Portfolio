@@ -111,6 +111,16 @@ const Projects = () => {
 
           </p>
           </div>
+          <h4>How would i have done this project again with my current knowledge?</h4>
+          <div id='redo'>
+            <p>
+              This project was finished just before the completion of this portfolio, so there is not much in respect to technology i would redo. 
+              One of the biggest issues ended up being poor planning and information gathering, at the beginning of the project. This related to planning meetings with the employer, setting deadlines for ourselves for the different phases of the project, and so on. Having now gone through
+              a bachelor project, it shows how important this is. Me and my group realized late in the project that there were descisions we hade taken in the 
+              beginning that were now irreversible. This lowered the quality of the project overall, and gave me a clear sense of
+               how important the early phases of a project this scale is.  
+            </p>
+          </div>
           <h4>Why is this project in my portfolio?</h4>
           <div id='why'>
           <p>This project is by far the most extensive i have been part of during my three years as a web development student. 
@@ -136,7 +146,7 @@ const Projects = () => {
           <div id="purpose">
           <p>
             Plant watering system made for my campus at NTNU, to allow students and teachers
-            keep track of their position and watering schedule. 
+            keep track of their position and watering schedule. Group project 
           </p>
           </div>
           <h4>Methods used:</h4>
@@ -169,17 +179,12 @@ const Projects = () => {
             <img src={notification} alt="Notification functionality in developed application" />
           </div>
           <h4>Potential improvements:</h4>
-          <h5>Tech stack</h5>
+          <h5>Technology</h5>
           <div id="improvements">
           <p>
-          Even though we used very popular and mainstream technology for the project (MERN stack),
-          the level of code understanding and efficiency could be higher in this project. This was the
-          first project I used a framework like React, and it was obviously not perfect. This means there
+          The MERN stack was used to develop the application, a popular and widely used full-stack solution. This means there
           is a lot of code that could be rewritten and optimized, by for instance using functional
-          components and hooks, instead of class components. Had i gotten the chance to redo the project with my current knowledge
-          and skillset, i would probably have used the React framework Next.js to improve page performance, but kept the back-end the same, 
-          as it allowed manager users to easily add new plants in the application, and not have to access a third-party database or CMS. 
-          This would also allow the use of server-side rendering, that might improve contentul paint times throughout the application.
+          components and hooks, instead of class components. 
           </p>
           </div>
           <h5>Sustainability</h5>
@@ -190,6 +195,20 @@ const Projects = () => {
             the technology dimension, the code could have been made more efficient, which also would
             lower the energy use of the application.
           </p>
+          </div>
+          <h4>How would i redo this project with my current knowledge?</h4>
+          <div id='redo'>
+            <p>
+            Had i gotten the chance to redo the project with my current knowledge
+          and skillset, i would have used the React framework Next.js. 
+          This would allow the use of server-side rendering, that should improve contentul paint times throughout the application, 
+          and page performance in general. The page speed can also 
+          be improved by optimizing image sizes, by using a compression service. By using a compression service called <a href="https://tinypng.com/" id='tiny'>TinyPNG</a>, 
+          image sizes was reduced by 61% for the plant logo, and 54% for the title image of the campus.
+          The application could be improved by switching to a different hosting service. The free plan from Heroku it is currently deployed on, will enter a sleep state after no one has used the application for 30 minutes. 
+          Switching to a different hosting service and plan will make this better, and offer 
+          stable loading times.  
+            </p>
           </div>
           <h4>Why is this project in my portfolio?</h4>
           <div id='why'>
@@ -222,7 +241,7 @@ const Projects = () => {
           <h4>Methods used</h4>
           <div id="methods">
           <p>
-            IDG 2012 Web accessibility, usability and ethics lectures, WCAG documentation
+            IDG 2012 Web accessibility, usability and ethics lectures, WCAG documentation, Lo-Fi and Hi-Fi prototyping.
           </p>
           </div>
           <h4>Main technologies/tools</h4>
@@ -252,6 +271,7 @@ const Projects = () => {
           When building this page, we did not have much knowledge of how to program in all the
           necessary javascript features. This meant it became a mess of over-complicated code, and it
           could have easily been simplified and optimized, to improve the performance of the page.
+          
           </p>
           </div>
           <h4>Why is this project in my portfolio?</h4>
@@ -277,7 +297,7 @@ const Projects = () => {
           <div id="purpose">
           <p>
             Vacation app created to gather all events and activities in and around Gjøvik, 
-            to create a hub for tourists as well as locals.
+            to create a hub for tourists as well as locals. Exam group task in the course IDG 2200 Design and Prototyping for Digital Products. 
           </p>
           </div>
           <h4>Methods used</h4>
@@ -288,12 +308,15 @@ const Projects = () => {
           </div>
           <h4>Main technologies/tools</h4>
           <div id='technologies'>
-          <p>Figma, Balsamiq, Adobe XD</p>
+          <p>Balsamiq, Figma</p>
           </div>
           <h4>My contributions</h4>
           <div id='contributions'>
           <p>
-             
+             In this project i contributed on all aspects of the design, 
+             in particular the information architecture and UI. I also helped create personas and scenarios, that formed the foundation for later work. 
+
+
           </p>
           </div>
           <h4>Solution</h4>
@@ -310,11 +333,17 @@ const Projects = () => {
           whether or not it is usable and accessible. Testing this with 4-5 test subjects could reveal
           problems that need fixing.
           </p>
-          <h4>Why is this project in my portfolio?</h4>
-          <p>This project was purely design-based, but i think it displays good design practice and abilities
-            in Figma. It is simple but effective and gives a clean overview of the activities possible.</p>
-          <a href="https://www.figma.com/proto/NnKV6ECsVNtr6pcPKxBwvu/swan.-vacation-app?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=12%3A140" target="_blank" rel="noreferrer">Link to project</a>
           </div>
+          <h4>Why is this project in my portfolio?</h4>
+          <div id='why'>
+          <p>This project was purely design-based, but i think it displays good design practice and abilities
+            in Figma. It is important to me as this course gave me the best insight into going through the design iterating process, from interviewing 
+            target users and creating personas, all the way through to the finished Hi-Fi prototype. This was the first project i really understood the process of going from an idea to a polished prototype. 
+            I found the process very rewarding to be a part of, and it was after this project i better realized that i enjoy both the design process, together with the development process.  
+            </p>
+            <a href="https://www.figma.com/proto/NnKV6ECsVNtr6pcPKxBwvu/swan.-vacation-app?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=12%3A140" target="_blank" rel="noreferrer">Link to project</a>
+          </div>
+          
           </Box>
         </Modal>
         </section>
