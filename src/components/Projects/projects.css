@@ -28,16 +28,21 @@
 #modal {
     background-color: var(--background);
     color: var(--text-primary);
-    height: calc(100vh - 500px);
+    height: calc(100vh - 200px);
     overflow-y: auto;
+    padding: 32px 20%;
+}
+
+#modal h3 {
+    text-align: center;
 }
 
 #modal h4 {
-    margin-top: 4%;
+    margin-top: 1%;
 }
 
 #modal h5 {
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 section {
@@ -69,10 +74,32 @@ button p, button h3, button h4 {
     line-height: 1.5;
 }
 
-#boxes section button img, #purpose, #methods, #improvements {
+#purpose, #methods, #improvements, #technologies, #contributions, #solution {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    margin: 2% 0;
+    border: 1px solid black;
+}
+
+#why {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 0;
+    border: 1px solid black;
     width: 100%;
     text-align: left;
-    border-radius: 5px;
+    padding: 2%;
+}
+
+#boxes section button img {
+    width: 100%;
+}
+
+#purpose p, #methods p, #improvements p, #why p, #technologies p, #contributions p {
+    text-align: left;
 }
 
 #boxes section a img, #boxes section img {
@@ -84,6 +111,33 @@ button p, button h3, button h4 {
     transform: scale(1.02);
     transition-duration: 0.4s;
     
+}
+
+#modal img {
+    width: 50%;
+    max-width: 600px;
+}
+
+#modal a {
+    color: blue;
+    text-decoration: underline;
+    padding: 2%;
+}
+
+#modal a:hover {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1050px) {
+    #boxes section {
+        width: 35%;
+    }
+
+    #bio section {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -99,26 +153,44 @@ button p, button h3, button h4 {
 
     #modal {
         height: calc(100vh - 50px);
+        padding: 20px;
     }
 
-    #modal-img img {
-        width: 100%;
+    #boxes section button img, #purpose, #methods, #improvements, #why, #technologies, #contributions, #solution {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #modal img {
+        width: 70%;
+        margin: 2%;
+    }
+
+    #bio section {
+        width: 90%;
+    }
+
+    #boxes section {
+        width: 60%;
     }
 }
 
 @media screen and (max-width: 550px ) {
     #boxes {
+        width: 100%;
         flex-flow: column nowrap;
+        align-items: center;
         gap: 20px;
     }
 
-    
-
+    #modal img {
+        width: 95%;
+    }
     #boxes section a img, #boxes section img {
-        max-width: 50%;
+        max-width: 100%;
+    }
+    #boxes section {
+        width: 70%;
     }
 }
 
-#modal-img img {
-    max-width: 300px;
-}

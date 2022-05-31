@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footer, Bio, Projects, Navbar, Intro, Scroll } from './components';
+import { Footer, Bio, Projects, Navbar, Intro, Scroll, Portfolio } from './components';
 import Div100vh from 'react-div-100vh';
 import useLocalStorage from 'use-local-storage'
 import { RiSunLine, RiMoonLine } from "react-icons/ri";
@@ -44,6 +44,7 @@ const App = () => {
         </Div100vh>
         <Projects />
         <Bio />
+        <Portfolio />
         <Footer />
         <p id="copyright">© 2022 Built by Simen Tokerød Bergo</p>
     </div>
