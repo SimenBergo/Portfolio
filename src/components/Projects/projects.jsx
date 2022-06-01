@@ -11,6 +11,7 @@ import notification from '../../assets/planteskolen-notification.JPG'
 import auth from '../../assets/auth.JPG'
 import workout from '../../assets/workout-phone.JPG'
 import swandark from '../../assets/swancomparison.png'
+import workoutoverflow from '../../assets/workout-overflow.JPG'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import  Scroll2  from '../Scroll/scroll2.jsx';
@@ -68,7 +69,7 @@ const Projects = () => {
           <p>
              Collaboration project with the innovation department at Sykehuset Innlandet, where the aim was to create an application
              using video technology as decision support to improve prehospital services, by enabling doctors to remotely assess patients.
-             Me and my group used the hospital's current prototype as a foundation for our project, seen to the right.
+             Me and my group used the hospital's current prototype as a foundation for our project, seen in the picture.
           </p>
           <img src={peder} alt="original PreViS prototype" title='Original PreViS prototype' />
           </div>
@@ -111,7 +112,7 @@ const Projects = () => {
 
           </p>
           </div>
-          <h4>How would i have done this project again with my current knowledge?</h4>
+          <h4>How would i redo this project with my current knowledge?</h4>
           <div id='redo'>
             <p>
               This project was finished just before the completion of this portfolio, so there is not much in respect to technology i would redo. 
@@ -182,7 +183,9 @@ const Projects = () => {
           <h5>Technology</h5>
           <div id="improvements">
           <p>
-          The MERN stack was used to develop the application, a popular and widely used full-stack solution. This means there
+          The MERN stack was used to develop the application, a popular and widely used full-stack solution. 
+          However, since it was the first time i used the framework, the quality of the code is not as good as it can be.
+          This means there
           is a lot of code that could be rewritten and optimized, by for instance using functional
           components and hooks, instead of class components. 
           </p>
@@ -206,14 +209,16 @@ const Projects = () => {
           be improved by optimizing image sizes, by using a compression service. By using a compression service called <a href="https://tinypng.com/" id='tiny'>TinyPNG</a>, 
           image sizes was reduced by 61% for the plant logo, and 54% for the title image of the campus.
           The application could be improved by switching to a different hosting service. The free plan from Heroku it is currently deployed on, will enter a sleep state after no one has used the application for 30 minutes. 
+          This means the application can take much longer time than normal to load, and might discourage use.
           Switching to a different hosting service and plan will make this better, and offer 
-          stable loading times.  
+          fast page loading times throughout.  
             </p>
           </div>
           <h4>Why is this project in my portfolio?</h4>
           <div id='why'>
           <p>The developed application in this project is the biggest i have been a part of, 
-            in regards to time spent developing the app and ammount learned about coding a large scale React application. 
+            in regards to time spent developing the app and ammount learned about coding a large scale React application. This means it shows proficiency 
+            in a very popular and mainstream framework, that many workplaces are looking for relevant competence in. 
             I also think the design is simplistic and clean, and the
             UI/UX is intuitive and easy to use, making it simple for anyone to understand and use rapidly.
           </p>
@@ -235,7 +240,7 @@ const Projects = () => {
           <div id="purpose">
           <p>
             Workout timing system, made accessible and usable for everyone, allowing easy and 
-            guided home workouts.
+            guided home workouts for everyone regardless of physical or mental impairments.
           </p>
           </div>
           <h4>Methods used</h4>
@@ -252,6 +257,7 @@ const Projects = () => {
           <div id='contributions'>
           <p>
             In this project my main work was on the design (CSS), and how the information was structured and presented. 
+            I also contributed to the Javascript code required for the timing system to function.  
           </p>
           </div>
           <h4>Solution</h4>
@@ -261,7 +267,8 @@ const Projects = () => {
             to create a very accessible and usable home-workout site, that fulfills all WCAG
             requirements. By making the HTML as semantic as possible, it will be much easier for users relying on screenreaders to understand 
             all the HTML elements on the page. Adding the tabindex attribute to the interactive content makes it easier to navigate with keyboard. The 
-            page is also a product of designing for mobile-first, giving it much better readability and usability on small devices.  
+            page is also a product of designing for mobile-first, giving it much better readability and usability on small devices. The page is also filled with
+            voice instructions when in a workout, to improve usability.  
             </p>
             <img src={workout} alt="mobile first version of page" />
           </div>
@@ -271,13 +278,33 @@ const Projects = () => {
           When building this page, we did not have much knowledge of how to program in all the
           necessary javascript features. This meant it became a mess of over-complicated code, and it
           could have easily been simplified and optimized, to improve the performance of the page.
-          
+          The aesthetics could have been made more interesting by adding some more color on certain elements 
+          to highlight the important ones. The 'Start workout' button should be made green before hovering over it as well, to better signify 
+          it is there to initiate the workout. As seen in the picture, the modal window displayed when a workout is started, overflows the container
+          and requires scrolling to see all the steps to perform a certain excercise. By either setting the height of the container to something more responsive 
+          as the unit vh (View Height), or in a combination with removing text that is not neccesary during a workout, if properly explained before starting the workout.  
           </p>
+          <img src={workoutoverflow} alt="modal window displayed when workout is started" />
+          </div>
+          <h4>How would i redo this project with my current knowledge?</h4>
+          <div id='redo'>
+            <p>
+              Even though the project already has taken many steps to improve accessibility, there is still more that could be improved.
+               First of all, the font size for the text next to the selectable options for workouts, should be increased to 20px to improve readability. 
+               The whole application would also benefit greatly from utilizing a framework such as React, as this allows for creation of smaller components that build the page. 
+               It would also allow faster rendering through the virtual DOM, but updating only the values that changes, and not the whole page.
+               Utilizing React could also eliminate the need for the modal window when workouts is initiated, and rather used state or prop manipulation 
+               to remove the selectable workouts and display only the current started one.
+               The current page fetches its data from hard coded Javascript objects, which is hard to maintain and easily add new excercises. 
+               By connecting the improved React application to a headless CMS, content could easier be managed and maintained. 
+            </p>
           </div>
           <h4>Why is this project in my portfolio?</h4>
           <div id='why'>
           <p>
-            This project was included because it illustrates the importance of following accessibility guidelines, and how  
+            This project was included because it illustrates the importance of following accessibility guidelines, to develop web pages that
+            can be used by everyone. I think it is important to know the difference of developing a webpage fast, and developing it properly so that it complies with guidelines and norms. 
+            Good accessibility can give the page more recurring users, as those who rely on these aids wont find the page hard to use.  
             </p>
             <a href="https://folk.ntnu.no/simentb/2nd-Year/Tilgjengelighet/Exam-test/" target="_blank" rel="noreferrer">Link to project</a>
             </div>
@@ -314,30 +341,34 @@ const Projects = () => {
           <div id='contributions'>
           <p>
              In this project i contributed on all aspects of the design, 
-             in particular the information architecture and UI. I also helped create personas and scenarios, that formed the foundation for later work. 
-
-
+             in particular the information architecture and UI. I also helped create the personas and scenarios, that formed the foundation for the design prototype. 
           </p>
           </div>
           <h4>Solution</h4>
           <div id='solution'>
             <p>
-              
+              The app gives easy access to the most popular activities users might want to explore in Gjøvik, 
+              such as resturants, hotels, events and transportation. Selected activities can quickly be opened in the map, 
+              giving an efficient way of finding the location of activities. The selectable dark mode is a result of 
+              the increased demand for this feature, and makes the solution better implemented to the devices used by its users. The name "Swan" and the colors selected in the 
+              prototype is chosen to give a tighter connection to the city and commune of Gjøvik.   
             </p>
             <img src={swandark} alt="mobile first version of page" />
           </div>
           <h4>Potential improvements</h4>
           <div id='improvements'>
           <p>
-          This project was never tested with people outside of the group. Therefore, it is harder to say
-          whether or not it is usable and accessible. Testing this with 4-5 test subjects could reveal
-          problems that need fixing.
+          One clear issue with the prototype is that not everything is clickable. Finishing this would give a better impression
+          of how the prototype is to navigate. This would also make it a lot easier to lay the foundation for development. I would also add opening times 
+          for the different activities and events, to get more info about the different activities and events. Another nice feature to have would be the ability to 
+          compare two different resturants for instance, by a button on the different resturants to add to a comparison. In the bottom navbar, a calendar icon would help with giving an overview of the
+          activities that are coming up in general the coming days.      
           </p>
           </div>
           <h4>Why is this project in my portfolio?</h4>
           <div id='why'>
           <p>This project was purely design-based, but i think it displays good design practice and abilities
-            in Figma. It is important to me as this course gave me the best insight into going through the design iterating process, from interviewing 
+            in Figma. It is an important project to me as it gave me the first proper insight into going through the design iterating process, from interviewing 
             target users and creating personas, all the way through to the finished Hi-Fi prototype. This was the first project i really understood the process of going from an idea to a polished prototype. 
             I found the process very rewarding to be a part of, and it was after this project i better realized that i enjoy both the design process, together with the development process.  
             </p>
